@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="port2.css">
+	<title>My Portfolio
+  </title>
+  </head>
+  <body>
+    <div>
+      <h1>Marcelle Pulley</h1>
+      
+      <h2>Software Developer</h2>
+      <hr>
+      <p>My <em>favorite</em> thing about programming is building something and watching the changes in real-time.</p>
+    </div>  
+
+      
+      <div class="projects"> 
+        <h3>My Projects</h3>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </div>  
+    
+
+    <div class="about">
+      
+      <h3>About Me</h3>
+      <img src="marcelle_sm.jpg" alt="Me">
+      
+      <p>Truffaut marfa excepteur godard la croix tumeric shaman 
+sustainable. Narwhal meggings woke gentrify master cleanse trust fund. 
+Twee squid vaporware stumptown raw denim. Activated charcoal art party 
+disrupt godard drinking vinegar pitchfork paleo migas stumptown.  
+        
+
+</p>
+<h3>Contact Me</h3>
+<p><strong>phone:</strong> 919-553-4579</p>      
+      
+<p><strong>email</strong>
+  <a href="mailto:someone@example.com">marcelle@warrior.com</a></p>
+
+      
+  </div>
+   
+
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
